@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div class="w-full max-w-6xl mx-auto h-80 bg-white p-4">
+    <div class="w-full max-w-6xl mx-auto h-80 bg-white p-4 pt-24 text-sm">
       <div class="flex flex-col sm:flex-row items-center justify-center gap-6 mb-16">
         <a class="hover:decoration hover:underline" href="/">Fraint Studio</a>
         <a class="hover:decoration hover:underline" href="/plantillas">

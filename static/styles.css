@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#Hero{
+    background-image: url('./images/patterns/hero-pattern.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#Steps{
+    background-image: url('./images/patterns/steps-section-pattern.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
