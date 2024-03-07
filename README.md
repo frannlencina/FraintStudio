@@ -36,10 +36,10 @@
 <div align="center">
 
 ![Deno Badge](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=deno&logoColor=white)
-![GitHub stars](https://img.shields.io/github/stars/frannlencina/letrassinfiltro)
-![GitHub issues](https://img.shields.io/github/issues/frannlencina/letrassinfiltro)
-![GitHub forks](https://img.shields.io/github/forks/frannlencina/letrassinfiltro)
-![GitHub PRs](https://img.shields.io/github/issues-pr/frannlencina/letrassinfiltro)
+![GitHub stars](https://img.shields.io/github/stars/frannlencina/FraintStudio)
+![GitHub issues](https://img.shields.io/github/issues/frannlencina/FraintStudio)
+![GitHub forks](https://img.shields.io/github/forks/frannlencina/FraintStudio)
+![GitHub PRs](https://img.shields.io/github/issues-pr/frannlencina/FraintStudio)
 ![Tailwind CSS Badge](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?logo=tailwindcss&logoColor=fff&style=flat)
 
 </div>
