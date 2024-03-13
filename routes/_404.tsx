@@ -8,10 +8,10 @@ export default function Error404() {
         <title>404 - Page not found</title>
       </Head>
       <div class="px-4 py-8 flex flex-col  justify-center items-center">
-        <h1 class="font-black text-9xl text-clip text-transparent bg-clip-text w-fit bg-gradient-to-r from-[#EA580C] via-[#EA580C] to-[#FFF5DA]">
+        <h1 class="font-black text-5xl sm:text-7xl md:text-9xl text-clip text-transparent bg-clip-text w-fit bg-gradient-to-r from-[#EA580C] via-[#EA580C] to-[#FFF5DA]">
           404 ERROR
         </h1>
-        <h4 class="font-bold text-black opacity-80 text-3xl max-w-xl text-center mt-4">
+        <h4 class="font-bold text-black opacity-80 text-xl sm:text-3xl max-w-md md:max-w-xl text-center mt-4">
           Lo sentimos, no se ha podido encontrar la pagina que buscas.
         </h4>
         <CallToActionBtn/>

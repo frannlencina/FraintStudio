@@ -2,6 +2,8 @@ import Badge from "../components/Badge.tsx";
 import CallToActionBtn from "../components/CallToActionBtn.tsx";
 import BannerTech from "../islands/BannerTechs.tsx";
 import StepsRender from "../islands/StepsRender.tsx";
+import FooterBanner from '../components/FooterBanner.tsx';
+import ProjectRender from "../islands/ProjectRender.tsx";
 
 export default function Home() {
   return (
@@ -47,31 +49,8 @@ export default function Home() {
             las ideas digitales.
           </h4>
         </div>
-        <div class="grid grid-cols-1 justify-center items-center md:grid-cols-3 gap-4 max-w-5xl mx-auto py-32">
-          <img
-            src="https://res.cloudinary.com/dctldwa03/image/upload/v1708982042/lssfo-hero_jpqcrv.png"
-            alt="Proyecto LetrasSinFiltro"
-          />
-          <img
-            src="https://res.cloudinary.com/dctldwa03/image/upload/v1708982042/lssfo-hero_jpqcrv.png"
-            alt="Proyecto LetrasSinFiltro"
-          />
-          <img
-            src="https://res.cloudinary.com/dctldwa03/image/upload/v1708982042/lssfo-hero_jpqcrv.png"
-            alt="Proyecto LetrasSinFiltro"
-          />
-          <img
-            src="https://res.cloudinary.com/dctldwa03/image/upload/v1708982042/lssfo-hero_jpqcrv.png"
-            alt="Proyecto LetrasSinFiltro"
-          />
-          <img
-            src="https://res.cloudinary.com/dctldwa03/image/upload/v1708982042/lssfo-hero_jpqcrv.png"
-            alt="Proyecto LetrasSinFiltro"
-          />
-          <img
-            src="https://res.cloudinary.com/dctldwa03/image/upload/v1708982042/lssfo-hero_jpqcrv.png"
-            alt="Proyecto LetrasSinFiltro"
-          />
+        <div>
+          <ProjectRender />
         </div>
       </section>
       <section id="Steps">
@@ -92,6 +71,7 @@ export default function Home() {
           <StepsRender />
         </div>
       </section>
+      <FooterBanner />
     </main>
   );
 }

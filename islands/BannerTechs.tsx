@@ -11,7 +11,7 @@ export default function BannerTech() {
     "https://res.cloudinary.com/dctldwa03/image/upload/v1709775148/TypeScript_p9mxho.png",
   ];
   return (
-    <div class="grid grid-cols-2 sm:grid-cols-6 md:grid-cols-9 items-center justify-center gap-12 h-32">
+    <div class="grid grid-cols-2 sm:grid-cols-6 md:grid-cols-9 items-center justify-center gap-12 min-h-32 select-none">
       {techImages.map((tech, key) => (
         <div key={key}>
           <img width={50} height={50} src={tech} />

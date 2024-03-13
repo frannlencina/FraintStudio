@@ -13,3 +13,15 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+#FooterBanner{
+    background-image: url('./images/gradients/footer-banner-gradient.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#Cotizacion{
+    background-image: url('./images/patterns/cotizacion-background-pattern.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

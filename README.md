@@ -35,7 +35,7 @@
 
 <div align="center">
 
-![Deno Badge](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=deno&logoColor=white)
+![Deno Badge](https://img.shields.io/badge/deno-000000?style=for-the-badge&logo=deno&logoColor=white)
 ![GitHub stars](https://img.shields.io/github/stars/frannlencina/FraintStudio)
 ![GitHub issues](https://img.shields.io/github/issues/frannlencina/FraintStudio)
 ![GitHub forks](https://img.shields.io/github/forks/frannlencina/FraintStudio)
@@ -49,7 +49,6 @@
 - [**Deno Fresh**](https://fresh.deno.dev/) - The next-gen web framework for building server-side rendering.
 - [**Typescript**](https://www.typescriptlang.org/) - JavaScript with syntax for types.
 - [**Tailwindcss**](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
-- [**Radix UI**](https://www.radix-ui.com/) -  A collection of accessible components for building user interfaces.
 
 ## 🚀 Getting Started
 
