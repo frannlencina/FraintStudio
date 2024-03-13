@@ -8,6 +8,7 @@ import * as $_layout from "./routes/_layout.tsx";
 import * as $cotizacion from "./routes/cotizacion.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $BannerTechs from "./islands/BannerTechs.tsx";
+import * as $InputForm from "./islands/InputForm.tsx";
 import * as $NavbarMenu from "./islands/NavbarMenu.tsx";
 import * as $ProjectRender from "./islands/ProjectRender.tsx";
 import * as $StepsRender from "./islands/StepsRender.tsx";
@@ -23,6 +24,7 @@ const manifest = {
   },
   islands: {
     "./islands/BannerTechs.tsx": $BannerTechs,
+    "./islands/InputForm.tsx": $InputForm,
     "./islands/NavbarMenu.tsx": $NavbarMenu,
     "./islands/ProjectRender.tsx": $ProjectRender,
     "./islands/StepsRender.tsx": $StepsRender,

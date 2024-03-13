@@ -56,7 +56,7 @@ export default function ProjectRender() {
     },
   ];
   return (
-    <div class="grid grid-cols-1 justify-center items-center md:grid-cols-3 gap-6 max-w-5xl mx-auto py-32">
+    <div class="grid grid-cols-1 justify-center items-center md:grid-cols-3 gap-6 max-w-5xl mx-auto py-32 overflow-hidden">
       {projects.map((project, index) => (
         <div
           key={index}
