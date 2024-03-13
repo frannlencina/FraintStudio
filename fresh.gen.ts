@@ -7,7 +7,9 @@ import * as $_app from "./routes/_app.tsx";
 import * as $_layout from "./routes/_layout.tsx";
 import * as $cotizacion from "./routes/cotizacion.tsx";
 import * as $index from "./routes/index.tsx";
+import * as $Accordion from "./islands/Accordion.tsx";
 import * as $BannerTechs from "./islands/BannerTechs.tsx";
+import * as $FqAccordions from "./islands/FqAccordions.tsx";
 import * as $InputForm from "./islands/InputForm.tsx";
 import * as $NavbarMenu from "./islands/NavbarMenu.tsx";
 import * as $ProjectRender from "./islands/ProjectRender.tsx";
@@ -23,7 +25,9 @@ const manifest = {
     "./routes/index.tsx": $index,
   },
   islands: {
+    "./islands/Accordion.tsx": $Accordion,
     "./islands/BannerTechs.tsx": $BannerTechs,
+    "./islands/FqAccordions.tsx": $FqAccordions,
     "./islands/InputForm.tsx": $InputForm,
     "./islands/NavbarMenu.tsx": $NavbarMenu,
     "./islands/ProjectRender.tsx": $ProjectRender,
