@@ -2,7 +2,7 @@ import FqAccordion from "../islands/FqAccordions.tsx";
 
 const cardContactStyle = {
   card:
-    "relative shadow-sm hover:ring-4 hover:ring-orange-200 group text-start flex flex-col cursor-pointer hover:text-white hover:bg-orange-400 hover:scale-105 transition  justify-between  border border-stone-200 min-w-[300px] min-h-[200px] rounded-xl p-4 bg-white",
+    "relative shadow-sm hover:ring-4 bg-white bg-opacity-50 hover:ring-orange-200 group text-start flex flex-col cursor-pointer hover:text-white hover:bg-orange-400 hover:scale-105 transition  justify-between  border border-stone-200 min-w-[300px] min-h-[200px] rounded-xl p-4",
   badge:
     "py-2 px-3 bg-stone-200 text-white w-fit rounded-lg group-hover:bg-orange-300 transition ",
 };

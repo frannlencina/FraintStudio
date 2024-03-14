@@ -35,7 +35,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
+      <section id="Proyectos">
         <div class="flex flex-col gap-4 items-center justify-center max-w-xl mx-auto text-center pt-32 ">
           <h2 class="font-black text-5xl">
             Descubre nuestros{" "}
