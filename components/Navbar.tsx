@@ -20,7 +20,7 @@ export default function Navbar() {
         </div>
         <div class="hidden sm:flex gap-4">
           <a class="hover:opacity-50 transition-all duration-200" href="/proyectos">Proyectos</a>
-          <a class="hover:opacity-50 transition-all duration-200" href="/contact-us">Contactanos</a>
+          <a class="hover:opacity-50 transition-all duration-200" href="/contactanos">Contactanos</a>
         </div>    
       </div>
     </div>

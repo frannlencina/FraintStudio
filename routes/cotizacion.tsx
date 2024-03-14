@@ -69,8 +69,8 @@ export default function CotizacionPage() {
           </button>
         </div>
       </section>
-      <hr class="mt-6 mb-24" />
-      <section>
+      <hr class="mt-6" />
+      <section class="my-44">
         <div>
           <h2 class="font-black text-2xl sm:text-4xl">Preguntas frecuentes</h2>
           <p class="text-lg max-w-xl opacity-60 mt-5">
@@ -79,7 +79,7 @@ export default function CotizacionPage() {
             en contactarnos.
           </p>
         </div>
-        <div class="flex justify-center max-w-4xl mx-auto flex-wrap gap-4 mt-12">
+        <div class="flex justify-center max-w-4xl mx-auto flex-wrap gap-4 my-24">
           <FqAccordions />
         </div>
       </section>
