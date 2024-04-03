@@ -16,6 +16,7 @@ import * as $CotForm from "./islands/CotForm.tsx";
 import * as $FqAccordions from "./islands/FqAccordions.tsx";
 import * as $InputForm from "./islands/InputForm.tsx";
 import * as $NavbarMenu from "./islands/NavbarMenu.tsx";
+import * as $ProjectModal from "./islands/ProjectModal.tsx";
 import * as $ProjectRender from "./islands/ProjectRender.tsx";
 import * as $StepsRender from "./islands/StepsRender.tsx";
 import { type Manifest } from "$fresh/server.ts";
@@ -38,6 +39,7 @@ const manifest = {
     "./islands/FqAccordions.tsx": $FqAccordions,
     "./islands/InputForm.tsx": $InputForm,
     "./islands/NavbarMenu.tsx": $NavbarMenu,
+    "./islands/ProjectModal.tsx": $ProjectModal,
     "./islands/ProjectRender.tsx": $ProjectRender,
     "./islands/StepsRender.tsx": $StepsRender,
   },

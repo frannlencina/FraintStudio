@@ -60,7 +60,7 @@ export default function Home() {
             <span class="bg-gradient-to-r from-[#F39404] to-[#fead3370] bg-clip-text text-transparent">
               5 pasos
             </span>{" "}
-            para tu éxito en linea.
+            para tuéxito en linea.
           </h2>
           <h4 class="text-lg font-regular pl-12 mt-8 opacity-70 max-w-lg">
             Inicio sencillo, resultado excepcional. Comunicación ágil, reuniones

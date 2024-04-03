@@ -22,9 +22,13 @@ export default function CotForm() {
 
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    console.log(formData);
+    console.log(formData.name.length);
     // Enviar datos a la API
-    sendEmail()
+    if(formData.name.length !> 1 || formData.email.length !> 1 || formData.aboutProject.length !> 1){
+    
+    }else{
+      // sendEmail()
+    }
   };
 
   async function sendEmail() {
@@ -59,6 +63,7 @@ export default function CotForm() {
               value={formData.name}
               class={inputStyle}
               placeholder="Introduce tu nombre"
+              required={true}
             />
           </div>
 
@@ -72,6 +77,7 @@ export default function CotForm() {
               name="email"
               class={inputStyle}
               placeholder="Introduce tu correo electronico"
+              required={true}
             />
           </div>
         </div>
@@ -89,6 +95,7 @@ export default function CotForm() {
           placeholder="Cuentanos..."
           rows={6}
           cols={60}
+          required={true}
         >
         </textarea>
 
