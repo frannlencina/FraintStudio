@@ -10,6 +10,7 @@ import * as $api_resendapi from "./routes/api/resendapi.ts";
 import * as $contactanos from "./routes/contactanos.tsx";
 import * as $cotizacion from "./routes/cotizacion.tsx";
 import * as $index from "./routes/index.tsx";
+import * as $plantillas from "./routes/plantillas.tsx";
 import * as $Accordion from "./islands/Accordion.tsx";
 import * as $BannerTechs from "./islands/BannerTechs.tsx";
 import * as $CotForm from "./islands/CotForm.tsx";
@@ -31,6 +32,7 @@ const manifest = {
     "./routes/contactanos.tsx": $contactanos,
     "./routes/cotizacion.tsx": $cotizacion,
     "./routes/index.tsx": $index,
+    "./routes/plantillas.tsx": $plantillas,
   },
   islands: {
     "./islands/Accordion.tsx": $Accordion,
