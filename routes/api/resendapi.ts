@@ -8,7 +8,7 @@ interface Data {
 const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY")
 const SEND_EMAIL = Deno.env.get("SEND_EMAIL")
 
-Deno.serve(async (req) => {
+Deno.serve( { port: 3000, hostname: "0.0.0.0" }, async (req) => {
   const data = (await req.json()) as Data;
   const { name, email, aboutProject, web } = data;
 

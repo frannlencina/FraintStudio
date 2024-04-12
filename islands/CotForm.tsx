@@ -24,28 +24,31 @@ export default function CotForm() {
     e.preventDefault();
     console.log(formData.name.length);
     // Enviar datos a la API
-    if(formData.name.length !> 1 || formData.email.length !> 1 || formData.aboutProject.length !> 1){
-    
-    }else{
-      // sendEmail()
+    if (
+      formData.name.length > 1 || formData.email.length > 1 ||
+      formData.aboutProject.length > 1
+    ) {
+      sendEmail();
+    } else {
+      alert('Todos los campos son obligatorios');
     }
   };
 
   async function sendEmail() {
     const headers = new Headers({
-        'Content-Type': 'text/plain'
-      });
+      "Content-Type": "text/plain",
+    });
     const opts = {
-        method: 'POST',
-        headers: headers,
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          aboutProject: formData.aboutProject,
-          web: formData.web
-        })
-      }
-    const rawPosts = await fetch('http://localhost:8000/api/resendapi', opts);
+      method: "POST",
+      headers: headers,
+      body: JSON.stringify({
+        name: formData.name,
+        email: formData.email,
+        aboutProject: formData.aboutProject,
+        web: formData.web,
+      }),
+    };
+    const rawPosts = await fetch("http://localhost:3000/api/resendapi", opts);
     console.log(rawPosts);
   }
 
@@ -76,6 +79,7 @@ export default function CotForm() {
               value={formData.email}
               name="email"
               class={inputStyle}
+              type="text"
               placeholder="Introduce tu correo electronico"
               required={true}
             />

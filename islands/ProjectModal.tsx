@@ -80,7 +80,14 @@ export default function ProjectModal({ toggleModal, selectedProject }: Props) {
         </div>
         <div class="flex flex-col justify-center items-center gap-4 xl:flex-row xl:gap-0 xl:justify-around w-full xl:max-h-48 px-4 py-12 mt-4">
           {/* Mostrar 3 Fotos del Proyecto */}
-          <img
+          {
+            project?.modal.recapImgs.map( (index, key ) => (
+             
+                <img class="w-52 h-auto rounded-lg" src={index} key={key} />
+             
+            ) )
+          }
+          {/* <img
             class="w-52 h-auto rounded-lg"
             src="https://res.cloudinary.com/dctldwa03/image/upload/v1708982042/lssfo-hero_jpqcrv.png"
             alt=""
@@ -94,7 +101,7 @@ export default function ProjectModal({ toggleModal, selectedProject }: Props) {
             class="w-52 h-auto rounded-lg"
             src="https://res.cloudinary.com/dctldwa03/image/upload/v1708982042/lssfo-hero_jpqcrv.png"
             alt=""
-          />
+          /> */}
         </div>
       </div>
     </div>
