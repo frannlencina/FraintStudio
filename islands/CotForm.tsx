@@ -1,7 +1,6 @@
 import { useState } from "preact/hooks";
 
 export default function CotForm() {
-
   const inputStyle =
     "border border-stone-300 p-2 rounded-lg transition outline-stone-100 duration-200 focus:ring-2 focus:ring-stone-200 mt-2";
 

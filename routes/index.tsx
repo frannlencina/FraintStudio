@@ -5,6 +5,8 @@ import StepsRender from "../islands/StepsRender.tsx";
 import FooterBanner from '../components/FooterBanner.tsx';
 import ProjectRender from "../islands/ProjectRender.tsx";
 
+import "https://deno.land/std@0.223.0/dotenv/load.ts";
+
 export default function Home() {
   return (
     <main>
