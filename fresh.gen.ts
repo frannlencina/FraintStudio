@@ -6,7 +6,7 @@ import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $_layout from "./routes/_layout.tsx";
 import * as $_middleware from "./routes/_middleware.ts";
-import * as $api_resendapi from "./routes/api/resendapi.ts";
+import * as $api_emails_index from "./routes/api/emails/index.ts";
 import * as $contactanos from "./routes/contactanos.tsx";
 import * as $cotizacion from "./routes/cotizacion.tsx";
 import * as $index from "./routes/index.tsx";
@@ -28,7 +28,7 @@ const manifest = {
     "./routes/_app.tsx": $_app,
     "./routes/_layout.tsx": $_layout,
     "./routes/_middleware.ts": $_middleware,
-    "./routes/api/resendapi.ts": $api_resendapi,
+    "./routes/api/emails/index.ts": $api_emails_index,
     "./routes/contactanos.tsx": $contactanos,
     "./routes/cotizacion.tsx": $cotizacion,
     "./routes/index.tsx": $index,

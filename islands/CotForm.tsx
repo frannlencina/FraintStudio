@@ -28,28 +28,31 @@ export default function CotForm() {
       formData.name.length > 1 || formData.email.length > 1 ||
       formData.aboutProject.length > 1
     ) {
-      sendEmail();
+      sendEmailTo();
     } else {
-      alert('Todos los campos son obligatorios');
+      alert("Todos los campos son obligatorios");
     }
   };
 
-  async function sendEmail() {
-    const headers = new Headers({
-      "Content-Type": "text/plain",
-    });
-    const opts = {
+  function sendEmailTo() {
+    // Create a post request
+    const request = new Request("http://localhost:8000/api/emails", {
       method: "POST",
-      headers: headers,
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify({
         name: formData.name,
         email: formData.email,
         aboutProject: formData.aboutProject,
         web: formData.web,
       }),
-    };
-    const rawPosts = await fetch("http://localhost:3000/api/resendapi", opts);
-    console.log(rawPosts);
+    });
+
+    console.log(request.method); // POST
+    console.log(request.headers.get("content-type")); // application/json
+
+    return fetch(request);
   }
 
   return (
