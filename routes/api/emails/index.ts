@@ -7,14 +7,14 @@ type Data = {
   web: string;
 };
 
-const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
-const SEND_EMAIL = Deno.env.get("SEND_EMAIL");
-
 export const handler: Handlers<Data | null> = {
   async POST(req, _ctx) {
     const { email, name, aboutProject, web } = (await req.json()) as Data;
 
     function executeEmail() {
+      const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
+      const SEND_EMAIL = Deno.env.get("SEND_EMAIL");
+
       // Create the post request to send the email.
       const request = new Request("https://api.resend.com/emails", {
         method: "POST",
