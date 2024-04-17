@@ -44,11 +44,7 @@ export const handler: Handlers<Data | null> = {
       return fetch(request);
     }
 
-    if (email.length > 0 || name.length > 0 || aboutProject.length > 0) {
-      executeEmail();
-    } else {
-      console.log("Faltan datos.");
-    }
+    executeEmail();
     const ok = true;
     if (!ok) throw new Error("Ocurrio un error.");
     return new Response(JSON.stringify(req));
