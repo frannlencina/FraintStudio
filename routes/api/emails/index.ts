@@ -11,10 +11,14 @@ const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
 const SEND_EMAIL = Deno.env.get("SEND_EMAIL");
 
 export const handler: Handlers<Data | null> = {
+  
   async POST(req, _ctx) {
+  
+    
     const { email, name, aboutProject, web } = (await req.json()) as Data;
 
     function executeEmail() {
+     
       // Create the post request to send the email.
 
       const request = new Request("https://api.resend.com/emails", {
@@ -34,6 +38,7 @@ export const handler: Handlers<Data | null> = {
                     <p>Página web de ejemplo/inspiración: ${web}</p>`,
         }),
       });
+      console.log("las claves son " +RESEND_API_KEY + SEND_EMAIL);
       console.log("Cotizacion enviada correctamente");
 
       return fetch(request);
