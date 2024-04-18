@@ -12,8 +12,8 @@ type Data = {
 export const handler: Handlers<Data | null> = {
   async POST(req, _ctx) {
 
-    const RESEND_API_KEY = config()['RESEND_API_KEY']
-    const SEND_EMAIL = config()['SEND_EMAIL']
+    const RESEND_API_KEY = "re_37D6LUzb_2A9aGLv7eGDboWTB14QD3bMp"
+    const SEND_EMAIL = "oldnoke@gmail.com"
 
     const { email, name, aboutProject, web } = (await req.json()) as Data;
 
