@@ -1,5 +1,7 @@
 import { Handlers } from "$fresh/server.ts";
 
+import { config } from 'https://deno.land/x/dotenv/mod.ts';
+
 type Data = {
   email: string;
   name: string;
@@ -7,20 +9,16 @@ type Data = {
   web: string;
 };
 
-const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY");
-const SEND_EMAIL = Deno.env.get("SEND_EMAIL");
-
 export const handler: Handlers<Data | null> = {
-  
   async POST(req, _ctx) {
-  
-    
+
+    const RESEND_API_KEY = config()['RESEND_API_KEY']
+    const SEND_EMAIL = config()['SEND_EMAIL']
+
     const { email, name, aboutProject, web } = (await req.json()) as Data;
 
-    function executeEmail() {
-     
-      // Create the post request to send the email.
-
+    function executeSend() {
+      // Create a post request
       const request = new Request("https://api.resend.com/emails", {
         method: "POST",
         headers: {
@@ -38,15 +36,17 @@ export const handler: Handlers<Data | null> = {
                     <p>Página web de ejemplo/inspiración: ${web}</p>`,
         }),
       });
-      console.log("las claves son " +RESEND_API_KEY + SEND_EMAIL);
-      console.log("Cotizacion enviada correctamente");
+
+      console.log(request.method); // POST
+      console.log(request.headers.get("content-type")); // application/json
 
       return fetch(request);
     }
 
-    executeEmail();
+    executeSend();
+
     const ok = true;
-    if (!ok) throw new Error("Ocurrio un error.");
+    if (!ok) throw new Error("Something went wrong.");
     return new Response(JSON.stringify(req));
   },
 };
