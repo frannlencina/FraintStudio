@@ -47,8 +47,7 @@ export default function Home() {
             realizados.
           </h2>
           <h4 class="text-lg font-regular opacity-70 max-w-lg">
-            Explora nuestra galería de proyectos y descubre cómo damos vida a
-            las ideas digitales.
+          Explora nuestra galería de proyectos y descubre cómo damos vida a las ideas digitales.
           </h4>
         </div>
         <div>
@@ -65,8 +64,7 @@ export default function Home() {
             para tuéxito en linea.
           </h2>
           <h4 class="text-lg font-regular pl-12 mt-8 opacity-70 max-w-lg">
-            Inicio sencillo, resultado excepcional. Comunicación ágil, reuniones
-            mínimas para maximizar tiempo y eficiencia en cada paso.
+          Inicio sencillo, resultado excepcional. Comunicación ágil, reuniones mínimas para maximizar tiempo y eficiencia en cada paso.
           </h4>
         </div>
         <div>

@@ -11,28 +11,28 @@
       "ppImage": "https://res.cloudinary.com/dctldwa03/image/upload/v1712344481/image_22_uvz9yw.png"
     },
     "modal": {
-      "about": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors",
-      "aboutTech": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors",
-      "recapTech": ["Typescript", "NextJs", "TailwindCSS"],
-      "recapImgs": ["https://res.cloudinary.com/dctldwa03/image/upload/v1708982042/lssfo-hero_jpqcrv.png", "https://res.cloudinary.com/dctldwa03/image/upload/v1708982042/lssfo-hero_jpqcrv.png", "https://res.cloudinary.com/dctldwa03/image/upload/v1708982042/lssfo-hero_jpqcrv.png"]
+      "about": "LetrasSinFiltro es un generador de frases con IA y futura Red Social enfocada en el desahogo en frases e indirectas.",
+      "aboutTech": "La pagina esta creada con NextJS como framework FrontEnd utilizando TailwindCSS para los estilos. Tambien usa Mongoose y MongoDb para la conexion y manejo de la base de datos.",
+      "recapTech": ["TypeScript", "NextJS", "TailwindCSS", "MongoDb"],
+      "recapImgs": ["https://res.cloudinary.com/dctldwa03/image/upload/v1716946440/wvb9hearkyfldv5ku1ag.png", "https://res.cloudinary.com/dctldwa03/image/upload/v1716946440/jcmo765vsizcyutvz0dl.png", "https://res.cloudinary.com/dctldwa03/image/upload/v1716946440/vf0nawajfks2sjy2lduv.png"]
     }
   },
   {
     "id": 2,
     "title": "SafePvP v1.0",
-    "description": "SafePvP es la pagina oficial sobre una ex comunidad de un videojuego.",
+    "description": "SafePvP es la pagina oficial sobre un ex servidor de un videojuego.",
     "tags": [""],
-    "img": "https://res.cloudinary.com/dctldwa03/image/upload/v1708982042/lssfo-hero_jpqcrv.png",
+    "img": "https://res.cloudinary.com/dctldwa03/image/upload/v1684342116/safepvp_hero_yey4jm.jpg",
     "link": "https://www.letrassinfiltro.site",
     "creator":{
       "name": "Francisco Lencina",
       "ppImage": "https://res.cloudinary.com/dctldwa03/image/upload/v1712344481/image_22_uvz9yw.png"
     },
     "modal": {
-      "about": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors",
-      "aboutTech": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors",
-      "recapTech": ["Typescript", "NextJs", "TailwindCSS"],
-      "recapImgs": ["https://res.cloudinary.com/dctldwa03/image/upload/v1708982042/lssfo-hero_jpqcrv.png", "https://res.cloudinary.com/dctldwa03/image/upload/v1708982042/lssfo-hero_jpqcrv.png", "https://res.cloudinary.com/dctldwa03/image/upload/v1708982042/lssfo-hero_jpqcrv.png"]
+      "about": "SafePvP es la pagina oficial sobre un ex servidor de un videojuego.",
+      "aboutTech": "La pagina fue creada con React Js como Framework de JS, con Tailwind CSS como Framework de CSS,y con herramienta de compilacion ViteJS. Fue planteada, diseñada y estructurada antes de dicho desarrollo en Figma. La pagina tambien trabajaba con una API donde se extraian los datos para ver a tiempo real la cantidad de jugadores online.",
+      "recapTech": ["JavaScript", "ReactJS", "TailwindCSS"],
+      "recapImgs": ["https://res.cloudinary.com/dctldwa03/image/upload/v1684342116/safepvp_hero_yey4jm.jpg", "https://res.cloudinary.com/dctldwa03/image/upload/v1684342035/safepvp_hero3_nqnudb.png", "https://res.cloudinary.com/dctldwa03/image/upload/v1684342035/safepvp_hero2_rut2qo.png"]
     }
   },
   {
@@ -40,35 +40,35 @@
     "title": "PinkMc",
     "description": "PinkMc fue la pagina oficial sobre un ex servidor de un videojuego.",
     "tags": [""],
-    "img": "https://res.cloudinary.com/dctldwa03/image/upload/v1708982042/lssfo-hero_jpqcrv.png",
+    "img": "https://res.cloudinary.com/dctldwa03/image/upload/v1716947898/uiltfjjmudsvpamm6aab.png",
     "link": "https://www.letrassinfiltro.site",
     "creator":{
       "name": "Francisco Lencina",
       "ppImage": "https://res.cloudinary.com/dctldwa03/image/upload/v1712344481/image_22_uvz9yw.png"
     },
     "modal": {
-      "about": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors",
-      "recapTech": ["Typescript", "NextJs", "TailwindCSS"],
-      "aboutTech": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors",
-      "recapImgs": ["https://res.cloudinary.com/dctldwa03/image/upload/v1708982042/lssfo-hero_jpqcrv.png", "https://res.cloudinary.com/dctldwa03/image/upload/v1708982042/lssfo-hero_jpqcrv.png", "https://res.cloudinary.com/dctldwa03/image/upload/v1708982042/lssfo-hero_jpqcrv.png"]
+      "about": "PinkMc es la pagina oficial de un servidor exitoso del videojuego Minecraft.",
+      "recapTech": ["TypeScript", "NextJS", "TailwindCSS"],
+      "aboutTech": "La aplicación está estructurada como monolítica. Este proyecto está creado con NextJS y TailwindCSS en el FrontEnd, y en el BackEnd está desarrollada con TypeScript, Express, Mongoose y JSONWebToken.",
+      "recapImgs": ["https://res.cloudinary.com/dctldwa03/image/upload/v1716947898/uiltfjjmudsvpamm6aab.png", "https://res.cloudinary.com/dctldwa03/image/upload/v1716948304/usvxpjlcn8hqz65umjlf.png", "https://res.cloudinary.com/dctldwa03/image/upload/v1716948304/uwkrpa2gziqzxj43bjzo.png"]
     }
   },
   {
     "id": 4,
     "title": "Keyswh",
-    "description": "dsfgjbhksdvbhjavsdgavsdghavshdnajsdba",
+    "description": "Keyswh es una comunidad de teclados mecanicos, donde podras ver guias, noticias e informarte sobre estos.",
     "tags": [""],
-    "img": "https://res.cloudinary.com/dctldwa03/image/upload/v1708982042/lssfo-hero_jpqcrv.png",
+    "img": "https://res.cloudinary.com/dctldwa03/image/upload/v1684339873/keyswh_hero_jsiwtm.png",
     "link": "https://www.letrassinfiltro.site",
     "creator":{
       "name": "Francisco Lencina",
       "ppImage": "https://res.cloudinary.com/dctldwa03/image/upload/v1712344481/image_22_uvz9yw.png"
     },
     "modal": {
-      "about": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors",
-      "recapTech": ["Typescript", "NextJs", "TailwindCSS"],
-      "aboutTech": "Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors",
-      "recapImgs": ["https://res.cloudinary.com/dctldwa03/image/upload/v1708982042/lssfo-hero_jpqcrv.png", "https://res.cloudinary.com/dctldwa03/image/upload/v1708982042/lssfo-hero_jpqcrv.png", "https://res.cloudinary.com/dctldwa03/image/upload/v1708982042/lssfo-hero_jpqcrv.png"]
+      "about": "Keyswh es una comunidad de teclados mecanicos, donde podras ver guias, noticias e informarte sobre estos.",
+      "recapTech": ["JavaScript", "ReactJS", "TailwindCSS", "MongoDb"],
+      "aboutTech": "La aplicacion esta dividida en dos partes, el FrontEnd y el BackEnd. En el FrontEnd la pagina fue desarrollada con ReactJS como framework de JS y Tailwind CSS como framework de CSS. En el BackEnd la pagina esta Desarrollada con Node Js y Express para administrar las peticiones al servidor y Mongoose para conectar a MongoDb. Tambien utilize herramientas como JSONWebToken para la authenticacion y el Middelware en las peticiones de las rutas.",
+      "recapImgs": ["https://res.cloudinary.com/dctldwa03/image/upload/v1684339873/keyswh_hero_jsiwtm.png", "https://res.cloudinary.com/dctldwa03/image/upload/v1684339872/keyswh_adminposts_qepoec.png", "https://res.cloudinary.com/dctldwa03/image/upload/v1684339873/keyswh_adminlogin_dy3nih.png"]
     }
   }
 ]

@@ -1,0 +1,30 @@
+[
+    {
+      "id": "01",
+      "title": "Formulario",
+      "description":
+        "Danos información sobre tus necesidades o lo que buscas en la página web."
+    },
+    {
+      "id": "02",
+      "title": "Cotizacion",
+      "description":
+        "Analizamos tus necesidades y en base a lo que buscas creamos una cotización del proyecto."
+    },
+    {
+      "id": "03",
+      "title": "Aprobación",
+      "description": "Aprobación y envío de archivos/información necesaria."
+    },
+    {
+      "id": "04",
+      "title": "Diseño & Programacion",
+      "description":
+        "Diseño y prototipo del proyecto, siempre nos seguirás en el proceso. Luego programamos, optimizamos SEO y rendimiento."
+    },
+    {
+      "id": "05",
+      "title": "Lanzamiento",
+      "description": "Aprobación del proyecto final y lanzamiento en la web."
+    }
+  ]
