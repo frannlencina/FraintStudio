@@ -2,7 +2,7 @@ import FqAccordion from "../islands/FqAccordions.tsx";
 
 const cardContactStyle = {
   card:
-    "relative shadow-sm hover:ring-4 bg-white bg-opacity-50 hover:ring-orange-200 group text-start flex flex-col cursor-pointer hover:text-white hover:bg-orange-400 hover:scale-105 transition  justify-between  border border-stone-200 min-w-[300px] min-h-[200px] rounded-xl p-4",
+    "relative shadow-sm hover:ring-4 bg-white bg-opacity-50 hover:ring-orange-200 group text-start flex flex-col cursor-pointer hover:text-white hover:bg-orange-400 hover:scale-105 transition  justify-between  border border-stone-200 min-w-[280px] sm:min-w-[300px] sm:min-h-[200px] rounded-xl p-4",
   badge:
     "py-2 px-3 bg-stone-200 text-white w-fit rounded-lg group-hover:bg-orange-300 transition ",
 };
@@ -17,7 +17,7 @@ export default function ContactanosPage() {
             Haganos saber como podemos ayudarte
           </h4>
         </div>
-        <div class="flex gap-8 justify-center items-center">
+        <div class="flex flex-col sm:flex-row gap-8 justify-center items-center">
           <a href='mailto:franciscolencinap@gmail.com' target='_blank' class={cardContactStyle.card}>
             <span class={cardContactStyle.badge}>
               <i class="ri-mail-line"></i>
