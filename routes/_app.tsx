@@ -12,7 +12,7 @@ export default function App({ Component }: PageProps) {
           rel="stylesheet"
         />
       </head>
-      <body>
+      <body class="bg-[#F1F1F1]">
         <Component />
       </body>
     </html>

@@ -2,8 +2,8 @@ import NavbarMenu from '../islands/NavbarMenu.tsx'
 export default function Navbar() {
   
   return (
-    <div class="w-full h-24 bg-white">
-      <div class="flex flex-row justify-between p-4 pt-8 items-center font-medium text-black text-opacity-70 mx-auto max-w-6xl">
+    <div class="w-full h-24 bg-transparent">
+      <div class="flex flex-row justify-between  p-4 pt-8 items-center font-medium text-black text-opacity-70 mx-auto max-w-6xl">
         <div class="w-36">
           <a class="group relative flex gap-2 items-center text-2xl" href="/">
             <span class="font-black text-[#EA580C] group-hover:scale-110 transition-all duration-200">Fraint</span>
