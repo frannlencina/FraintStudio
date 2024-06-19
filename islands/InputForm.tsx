@@ -6,7 +6,7 @@ interface Props {
 }
 
 const inputStyle =
-  "border border-stone-300 p-2 rounded-lg transition outline-stone-100 duration-200 focus:ring-2 focus:ring-stone-200 mt-2";
+  "border border-stone-300 p-2 rounded-lg transition outline-stone-100 duration-200 focus:ring-2 focus:ring-stone-200 mt-2 bg-white";
 
 export default function InputForm(props: Props) {
   return (

@@ -2,7 +2,7 @@ import { useState } from "preact/hooks";
 
 export default function CotForm() {
   const inputStyle =
-    "border border-stone-300 p-2 rounded-lg transition outline-stone-100 duration-200 focus:ring-2 focus:ring-stone-200 mt-2";
+    "border border-stone-300 p-2 rounded-lg transition outline-stone-100 duration-200 focus:ring-2 focus:ring-stone-200 mt-2 bg-white";
 
   const [formData, setFormData] = useState({
     name: "",
@@ -101,7 +101,7 @@ export default function CotForm() {
           onInput={handleInputChange}
           value={formData.aboutProject}
           id="aboutProject"
-          className="border border-stone-300 p-2 rounded-lg transition outline-stone-100 duration-200 focus:ring-2 focus:ring-stone-200 mt-2"
+          className="border border-stone-300 p-2 rounded-lg transition outline-stone-100 duration-200 focus:ring-2 focus:ring-stone-200 mt-2 bg-white"
           placeholder="Cuentanos..."
           rows={6}
           cols={60}

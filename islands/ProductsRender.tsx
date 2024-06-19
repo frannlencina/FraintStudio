@@ -1,70 +1,40 @@
-export default function ProductsRender(){
-    const fakeData = [
-        {
-        id: 1,
-        name: 'Fatsy',
-        image: 'https://res.cloudinary.com/dctldwa03/image/upload/v1718647667/test-product-image_ql99de.png',
-        type: 'Club de Fiestas',
-        slug: 'club-fiestas-1',
-        description: 'Pagina desarrollada y optimizada hacia automotoras lista para usar.',    
-        tags: ['Web', 'Landing page'],
-        price: 160,
-      },
-      {
-        id: 2,
-        name: 'Haller',
-        image: 'https://res.cloudinary.com/dctldwa03/image/upload/v1718648243/Group_94_gamoqz.png',
-        type: 'Automotora',
-        slug: 'automotora-2',
-        description: 'Pagina desarrollada y optimizada hacia automotoras lista para usar.',    
-        tags: ['Web', 'Landing page'],
-        price: 180,
-      },
-      {
-        id: 3,
-        name: 'Bugo',
-        image: 'https://res.cloudinary.com/dctldwa03/image/upload/v1718648243/image_47_a3exsp.png',
-        type: 'Food',
-        slug: 'food-2',
-        description: 'Pagina desarrollada y optimizada hacia automotoras lista para usar.',    
-        tags: ['Web', 'Landing page'],
-        price: 200,
-      },
-      {
-        id: 4,
-        name: 'Fatsy',
-        image: 'https://res.cloudinary.com/dctldwa03/image/upload/v1718647667/test-product-image_ql99de.png',
-        type: 'Club de Fiestas',
-        slug: 'club-fiestas-2',
-        description: 'Pagina desarrollada y optimizada hacia automotoras lista para usar.',    
-        tags: ['Web', 'Landing page'],
-        price: 140,
-      },
-    
-    ]
+import { useState } from "preact/hooks";
+import ProductCard from "../components/ProductCard.tsx";
+import { ProductStructure } from '../utils/Interfaces.ts'
 
-    return(
-        <>
-            {
-                fakeData.map( (item, index)=> (
-                    <a href={`plantillas/product/` + item.slug } class="bg-white rounded-b-3xl max-w-[200px] min-[500px]:max-w-sm hover:text-orange-600 cursor-pointer transition-all" key={index} >
-                        <div class=" object-cover  overflow-hidden">
-                            <img class="object-cover" src={item.image} alt="Previsualizacion de pagina web" srcset="" />
-                        </div>
-                        <hr class="mx-auto max-w-[80%] my-4" />
-                        <span class="flex gap-2 px-2 py-1 bg-[#FFDDCB] text-xs text-orange-600 w-fit rounded-full ml-3"><i class="ri-box-3-line"></i> {item.tags[0]}</span>
-                        <div class="flex flex-col gap-8 ml-2 p-4">
-                            <div class="flex flex-col">
-                                <h4 class="font-bold opacity-65">{item.type}</h4>
-                                <p class=" opacity-35 max-w-md ">{item.description}</p>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="font-bold">${item.price} USD</span>
-                            </div>
-                        </div>
-                    </a>
-                ) )
-            }
-        </>
-    )
+interface Props {
+    productsData: ProductStructure[];
+}
+
+export default function ProductsRender({productsData}: Props) {
+
+  const tags: string[] = ["Todo", "Landing page", "Web"];
+  const [tagSelected, setTagSelected] = useState("Todo");
+  const dataFilter = tagSelected === 'Todo' ? productsData : productsData.filter((item) => item.tags.includes(tagSelected));
+
+  return (
+    <div class="flex flex-col gap-12">
+
+      <div class="mt-12 text-black">
+        <h4 class="font-bold text-xl mb-2 ml-2">Filtrar <i class="ri-corner-right-down-line text-orange-600"></i></h4>  
+      <div class="flex gap-3 text-md font-medium m-4 ">
+        {tags.map((item) => (
+          <button
+            class={ item == tagSelected ? `text-white bg-orange-600 px-2 py-1 rounded-full` : `text-stone-700 hover:text-orange-600 transition-all duration-200`  }
+            key={item}
+            onClick={() => setTagSelected(item)}
+          >
+            {item}
+          </button>
+        ))}
+      </div>
+      <hr class="my-6 max-w-3xl mx-auto" />
+      </div>
+      <div class="grid grid-cols-1 min-[350px]:grid-cols-2 md:grid-cols-4 p-2 sm:p-8 gap-4 min-[350px]:gap-6">
+        {dataFilter.map((item, index) => (
+          <ProductCard product={item} index={index} />
+        ))}
+      </div>
+    </div>
+  );
 }

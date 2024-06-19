@@ -10,7 +10,7 @@ import "https://deno.land/std@0.223.0/dotenv/load.ts";
 export default function Home() {
   return (
     <main>
-      <section id="Hero" class="Hero px-4 py-8 mx-auto">
+      <section id="Hero" class="Hero px-4 py-8 mx-auto text-black">
         <div
           id="HeroChildren"
           class="max-w-6xl mx-auto flex flex-col items-center justify-center min-h-screen"
@@ -38,7 +38,7 @@ export default function Home() {
         </div>
       </section>
       <section id="Proyectos">
-        <div class="flex flex-col gap-4 items-center justify-center max-w-xl mx-auto text-center pt-32 ">
+        <div class="flex flex-col gap-4 items-center justify-center max-w-xl mx-auto text-center pt-32 text-black">
           <h2 class="font-black text-5xl">
             Descubre nuestros{" "}
             <span class=" bg-gradient-to-r from-[#ff7b004c] via-[#F39404] to-[#fead3353] bg-clip-text text-transparent">
@@ -55,7 +55,7 @@ export default function Home() {
         </div>
       </section>
       <section id="Steps">
-        <div class="max-w-6xl mx-auto pt-36">
+        <div class="max-w-6xl mx-auto pt-36 text-black">
           <h2 class="font-black text-5xl max-w-xl">
             A solo{" "}
             <span class="bg-gradient-to-r from-[#F39404] to-[#fead3370] bg-clip-text text-transparent">
