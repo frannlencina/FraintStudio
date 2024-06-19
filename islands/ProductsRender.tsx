@@ -47,8 +47,8 @@ export default function ProductsRender(){
         <>
             {
                 fakeData.map( (item, index)=> (
-                    <a href={`plantillas/product/` + item.slug } class="bg-white rounded-3xl max-w-[200px] min-[500px]:max-w-sm hover:text-orange-600 cursor-pointer transition-all rounded-t-xl" key={index} >
-                        <div class=" object-cover rounded-t-xl overflow-hidden">
+                    <a href={`plantillas/product/` + item.slug } class="bg-white rounded-b-3xl max-w-[200px] min-[500px]:max-w-sm hover:text-orange-600 cursor-pointer transition-all" key={index} >
+                        <div class=" object-cover  overflow-hidden">
                             <img class="object-cover" src={item.image} alt="Previsualizacion de pagina web" srcset="" />
                         </div>
                         <hr class="mx-auto max-w-[80%] my-4" />
