@@ -3,7 +3,7 @@ import FqAccordions from "../islands/FqAccordions.tsx";
 
 export default function CotizacionPage() {
   return (
-    <main id="Cotizacion" className="w-full mx-auto max-w-6xl px-4 py-6">
+    <main id="Cotizacion" className="w-full mx-auto max-w-6xl px-4 py-6 text-black">
       <section>
         <div className="text-center flex flex-col gap-4 justify-center items-center p-4">
           <h1 className="font-black text-4xl sm:text-6xl max-w-2xl">

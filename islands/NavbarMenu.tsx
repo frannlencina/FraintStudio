@@ -32,6 +32,12 @@ function NavbarMenu() {
             </a>
           </div>
           <div class="flex flex-col gap-4">
+          <a
+              class="hover:opacity-50 transition-all duration-200"
+              href="/plantillas"
+            >
+              Explorar plantillas
+            </a>
             <a
               class="hover:opacity-50 transition-all duration-200"
               href="/cotizacion"

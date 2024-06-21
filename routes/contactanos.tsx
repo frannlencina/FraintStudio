@@ -9,7 +9,7 @@ const cardContactStyle = {
 
 export default function ContactanosPage() {
   return (
-    <main class="max-w-6xl p-4 mx-auto">
+    <main class="max-w-6xl p-4 mx-auto text-black">
       <section id="Contactanos" class="flex flex-col text-center">
         <div class="my-24">
           <h1 class="font-extrabold text-6xl">Contacta con nosotros</h1>
