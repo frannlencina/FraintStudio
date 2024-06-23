@@ -7,7 +7,7 @@ interface Props {
     productsData: ProductStructure[];
 }
 
-export default function ProductsRender({productsData}: Props) {
+export default function ProductsRender({ productsData }: Props) {
 
   const [tagSelected, setTagSelected] = useState("Todo");
   const dataFilter = tagSelected === 'Todo' ? productsData : productsData.filter((item) => item.tags.includes(tagSelected));

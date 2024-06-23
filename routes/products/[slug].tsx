@@ -1,9 +1,6 @@
-import ProductsData from "../../store/products/ProductsData.json" with {
-  type: "json",
-};
+import ProductsData from "../../store/products/ProductsData.json" with { type: "json",};
 import { FreshContext } from "$fresh/server.ts";
 import AuthorBadge from "../../components/AuthorBadge.tsx";
-import { useState } from "preact/hooks";
 import PriceCard from "../../islands/PriceCard.tsx";
 
 export default function ProductsPage(ctx: FreshContext) {
