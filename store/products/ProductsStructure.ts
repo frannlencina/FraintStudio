@@ -26,7 +26,7 @@ export interface Specifications {
 }
 
 export interface ProductsStructure {
-    id: number;
+    id: string;
     author: Author;
     name: string;
     image: string;
@@ -38,4 +38,4 @@ export interface ProductsStructure {
     specifications: Specifications;
 }
 
-export const ProductsTags = ["Todo", "Landing", "E-Commerce", "Blogs", "Portfolio", "Personalizado"]
+export const ProductsTags = ["Todo", "Landing", "E-Commerce", "Blogs", "Portfolio", "Games", "Personalizado"]

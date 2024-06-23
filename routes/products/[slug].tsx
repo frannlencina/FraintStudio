@@ -41,13 +41,15 @@ export default function ProductsPage(ctx: FreshContext) {
                   <h2 class="text-4xl font-black">{product.name}</h2>
                   <h4 class="text-xl opacity-65">{product.description}</h4>
                  <PriceCard price={product.price} />
+                 
                   <p class="opacity-60 text-xs max-w-xs mt-6">
                     Al comprar el producto aceptas los términos y condiciones
                     que aclara Fraint Studio.
                   </p>
-                  <button class="bg-orange-600 my-4 mx-auto text-white rounded-lg px-4 py-2 font-bold hover:bg-transparent outline hover:outline-orange-600 hover:outline-2 hover:text-orange-600">
-                  <i class="ri-whatsapp-line font-normal"></i>   Comprar
-                  </button>
+
+                  <a href="mailto:franciscolencinap@gmail.com" class="inline-block bg-orange-600 mt-4 mx-auto text-white rounded-lg px-4 py-2 font-bold hover:bg-transparent outline hover:outline-orange-600 hover:outline-2 hover:text-orange-600">
+                    Comprar
+                  </a>
                  
                 </div>
               </div>
