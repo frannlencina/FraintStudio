@@ -18,6 +18,7 @@ import * as $CotForm from "./islands/CotForm.tsx";
 import * as $FqAccordions from "./islands/FqAccordions.tsx";
 import * as $InputForm from "./islands/InputForm.tsx";
 import * as $NavbarMenu from "./islands/NavbarMenu.tsx";
+import * as $PriceCard from "./islands/PriceCard.tsx";
 import * as $ProductsRender from "./islands/ProductsRender.tsx";
 import * as $ProjectModal from "./islands/ProjectModal.tsx";
 import * as $ProjectRender from "./islands/ProjectRender.tsx";
@@ -44,6 +45,7 @@ const manifest = {
     "./islands/FqAccordions.tsx": $FqAccordions,
     "./islands/InputForm.tsx": $InputForm,
     "./islands/NavbarMenu.tsx": $NavbarMenu,
+    "./islands/PriceCard.tsx": $PriceCard,
     "./islands/ProductsRender.tsx": $ProductsRender,
     "./islands/ProjectModal.tsx": $ProjectModal,
     "./islands/ProjectRender.tsx": $ProjectRender,

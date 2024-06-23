@@ -3,6 +3,8 @@ import ProductsData from "../../store/products/ProductsData.json" with {
 };
 import { FreshContext } from "$fresh/server.ts";
 import AuthorBadge from "../../components/AuthorBadge.tsx";
+import { useState } from "preact/hooks";
+import PriceCard from "../../islands/PriceCard.tsx";
 
 export default function ProductsPage(ctx: FreshContext) {
   const { slug } = ctx.params;
@@ -41,40 +43,15 @@ export default function ProductsPage(ctx: FreshContext) {
                 <div>
                   <h2 class="text-4xl font-black">{product.name}</h2>
                   <h4 class="text-xl opacity-65">{product.description}</h4>
-                  <div class="flex flex-col gap-5 mt-12">
-                    <div class="px-6 py-3 border-black rounded-2xl border-2 border-dashed max-w-full md:max-w-[65%] select-none cursor-pointer">
-                      <p class="text-xl font-bold">$ {product.price}</p>
-                      <div class="flex justify-between">
-                        <p>Envio rapido</p>
-                        <p>Free</p>
-                      </div>
-                      <p class="text-xs opacity-60">de 24 a 48hrs</p>
-                    </div>
-                    <div class="px-6 py-3 flex flex-col gap-2 border-black rounded-2xl border-2 border-dashed max-w-full md:max-w-[65%] select-none cursor-pointer">
-                      <p class="text-xl font-bold">$ {product.price + 80}</p>
-                      <div class="flex justify-between">
-                        <p>Envio rapido</p>
-                        <p>Free</p>
-                      </div>
-                      <p class="text-xs opacity-60">de 24 a 48hrs</p>
-                      <div class="flex justify-between">
-                        <p>Exclusivo</p>
-                        <p>$80</p>
-                      </div>
-                      <p class="text-xs opacity-50 mt-2">
-                        Cuando compras un producto exclusivo, automáticamente
-                        será eliminado de la página y serás el único que lo
-                        tenga.
-                      </p>
-                    </div>
-                  </div>
+                 <PriceCard price={product.price} />
                   <p class="opacity-60 text-xs max-w-xs mt-6">
                     Al comprar el producto aceptas los términos y condiciones
                     que aclara Fraint Studio.
                   </p>
                   <button class="bg-orange-600 my-4 mx-auto text-white rounded-lg px-4 py-2 font-bold hover:bg-transparent outline hover:outline-orange-600 hover:outline-2 hover:text-orange-600">
-                    Comprar
+                  <i class="ri-whatsapp-line font-normal"></i>   Comprar
                   </button>
+                 
                 </div>
               </div>
             </section>
@@ -121,7 +98,7 @@ export default function ProductsPage(ctx: FreshContext) {
               class="bg-[#09090B] w-fit text-white text-sm sm:text-md md:text-lg px-4 py-2 rounded-full hover:bg-transparent hover:text-[#09090B] hover:scale-105 border border-white hover:border-[#CCCCCC] transition-all duration-200"
               href="/"
             >
-              Inicio
+              <i class="ri-arrow-left-line"></i> Inicio
             </a>
           </section>
         )}
