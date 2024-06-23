@@ -1,6 +1,7 @@
 import { useState } from "preact/hooks";
 import ProductCard from "../components/ProductCard.tsx";
-import { ProductStructure } from '../utils/Interfaces.ts'
+import { ProductStructure } from '../store/products/ProductsStructure.ts'
+import { ProductsTags } from '../store/products/ProductsStructure.ts'
 
 interface Props {
     productsData: ProductStructure[];
@@ -8,19 +9,18 @@ interface Props {
 
 export default function ProductsRender({productsData}: Props) {
 
-  const tags: string[] = ["Todo", "Landing page", "Web"];
   const [tagSelected, setTagSelected] = useState("Todo");
   const dataFilter = tagSelected === 'Todo' ? productsData : productsData.filter((item) => item.tags.includes(tagSelected));
 
   return (
-    <div class="flex flex-col gap-12">
+    <main class="flex flex-col justify-start items-center gap-12 min-h-screen">
 
-      <div class="mt-12 text-black">
+      <div class="mt-6 text-black">
         <h4 class="font-bold text-xl mb-2 ml-2">Filtrar <i class="ri-corner-right-down-line text-orange-600"></i></h4>  
-      <div class="flex gap-3 text-md font-medium m-4 ">
-        {tags.map((item) => (
+      <div class="flex flex-wrap gap-3 text-md font-medium m-4 ">
+        {ProductsTags.map((item) => (
           <button
-            class={ item == tagSelected ? `text-white bg-orange-600 px-2 py-1 rounded-full` : `text-stone-700 hover:text-orange-600 transition-all duration-200`  }
+            class={ item == tagSelected ? `text-white bg-orange-600 px-2 py-1 rounded-md` : `text-stone-700 hover:text-orange-600`  }
             key={item}
             onClick={() => setTagSelected(item)}
           >
@@ -35,6 +35,6 @@ export default function ProductsRender({productsData}: Props) {
           <ProductCard product={item} index={index} />
         ))}
       </div>
-    </div>
+    </main>
   );
 }

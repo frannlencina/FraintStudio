@@ -1,0 +1,150 @@
+[
+    {
+        "id": "1",
+        "author": {
+            "name": "Francisco Lencina",
+            "rank": "Creador",
+            "img": "https://res.cloudinary.com/dctldwa03/image/upload/v1714420331/t3aw607pugwj6ynp5lzd.png"
+        },
+        "name": "Hugo",
+        "image": "https://res.cloudinary.com/dctldwa03/image/upload/v1716947898/uiltfjjmudsvpamm6aab.png",
+        "type": "Club de Fiestas",
+        "slug": "club-fiestas-1",
+        "description": "Pagina desarrollada y optimizada hacia automotoras lista para usar.",
+        "tags": [
+            "Web"
+        ],
+        "price": 160,
+        "specifications": {
+            "imagesCollection": [
+                "https://res.cloudinary.com/dctldwa03/image/upload/v1716947898/uiltfjjmudsvpamm6aab.png",
+                "https://res.cloudinary.com/dctldwa03/image/upload/v1716947898/uiltfjjmudsvpamm6aab.png",
+                "https://res.cloudinary.com/dctldwa03/image/upload/v1716947898/uiltfjjmudsvpamm6aab.png"
+            ],
+            "specificationsCollection": [
+                {
+                    "title": "Descripcion",
+                    "data": "La pagina fue creada y diseñada para orientarla a un trafico de usuarios sobre videojuegos. Cuenta con varias secciones a modificar, titulos, imagenes, textos y mas."
+                },
+                {
+                    "title": "Especificaciones tecnicas",
+                    "data": "Dicho proyecto es una Landing page el cual esta desarrollada y optimizada de manera que nos da un genial score tanto en SEO y Performance."
+                }
+            ],
+            "techsCollections": [
+                {
+                    "type": "FrontEnd",
+                    "technologies": [
+                        {
+                            "name": "NextJs",
+                            "reason": "Del lado del FrontEnd para un performance y optimización muy buena. Así permitiéndonos un buen deploy."
+                        },
+                        {
+                            "name": "TypeScript",
+                            "reason": "TypeScript utilizamos TypeScript en algunos componentes para así poder tener mejor control y seguridad en diversos componentes."
+                        },
+                        {
+                            "name": "TailwindCSS",
+                            "reason": "Para darle vida y estilos a la página de una forma rápida y eficiente en las classNames de los componentes."
+                        },
+                        {
+                            "name": "Framer Motion",
+                            "reason": "Framer Motion para agregarle un toque único y 'smooth' a los estilos de la página. Permitiéndonos jugar con animaciones en los componentes."
+                        }
+                    ]
+                },
+                {
+                    "type": "BackEnd",
+                    "technologies": [
+                        {
+                            "name": "Node.js",
+                            "reason": "Node.js utilizado en el backend para el manejo de servidores y lógica del lado del servidor."
+                        },
+                        {
+                            "name": "Express",
+                            "reason": "Express.js para la creación de APIs RESTful y manejo de peticiones HTTP."
+                        },
+                        {
+                            "name": "MongoDB",
+                            "reason": "MongoDB como base de datos NoSQL para almacenar y consultar datos de manera eficiente."
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    {
+        "id": "2",
+        "author": {
+            "name": "Francisco Lencina",
+            "rank": "Creador",
+            "img": "https://res.cloudinary.com/dctldwa03/image/upload/v1714420331/t3aw607pugwj6ynp5lzd.png"
+        },
+        "name": "Hugo",
+        "image": "https://res.cloudinary.com/dctldwa03/image/upload/v1716947898/uiltfjjmudsvpamm6aab.png",
+        "type": "Club de Fiestas",
+        "slug": "club-fiestas-1",
+        "description": "Pagina desarrollada y optimizada hacia automotoras lista para usar.",
+        "tags": [
+            "Web"
+        ],
+        "price": 160,
+        "specifications": {
+            "imagesCollection": [
+                "https://res.cloudinary.com/dctldwa03/image/upload/v1716947898/uiltfjjmudsvpamm6aab.png",
+                "https://res.cloudinary.com/dctldwa03/image/upload/v1716947898/uiltfjjmudsvpamm6aab.png",
+                "https://res.cloudinary.com/dctldwa03/image/upload/v1716947898/uiltfjjmudsvpamm6aab.png"
+            ],
+            "specificationsCollection": [
+                {
+                    "title": "Descripcion",
+                    "data": "La pagina fue creada y diseñada para orientarla a un trafico de usuarios sobre videojuegos. Cuenta con varias secciones a modificar, titulos, imagenes, textos y mas."
+                },
+                {
+                    "title": "Especificaciones tecnicas",
+                    "data": "Dicho proyecto es una Landing page el cual esta desarrollada y optimizada de manera que nos da un genial score tanto en SEO y Performance."
+                }
+            ],
+            "techsCollections": [
+                {
+                    "type": "frontend",
+                    "technologies": [
+                        {
+                            "name": "NextJs",
+                            "reason": "Del lado del FrontEnd para un performance y optimización muy buena. Así permitiéndonos un buen deploy."
+                        },
+                        {
+                            "name": "TypeScript",
+                            "reason": "TypeScript utilizamos TypeScript en algunos componentes para así poder tener mejor control y seguridad en diversos componentes."
+                        },
+                        {
+                            "name": "TailwindCSS",
+                            "reason": "Para darle vida y estilos a la página de una forma rápida y eficiente en las classNames de los componentes."
+                        },
+                        {
+                            "name": "Framer Motion",
+                            "reason": "Framer Motion para agregarle un toque único y 'smooth' a los estilos de la página. Permitiéndonos jugar con animaciones en los componentes."
+                        }
+                    ]
+                },
+                {
+                    "type": "backend",
+                    "technologies": [
+                        {
+                            "name": "Node.js",
+                            "reason": "Node.js utilizado en el backend para el manejo de servidores y lógica del lado del servidor."
+                        },
+                        {
+                            "name": "Express",
+                            "reason": "Express.js para la creación de APIs RESTful y manejo de peticiones HTTP."
+                        },
+                        {
+                            "name": "MongoDB",
+                            "reason": "MongoDB como base de datos NoSQL para almacenar y consultar datos de manera eficiente."
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+]

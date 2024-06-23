@@ -7,4 +7,7 @@ export interface ProductStructure {
     description: string,   
     tags: string[],
     price: number,
+    markdownDescription: string,
 }
+
+export const ProductsTags = ["Todo", "Landing", "E-Commerce", "Blogs", "Portfolio", "Personalizado"]

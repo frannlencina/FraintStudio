@@ -1,6 +1,6 @@
 import { useState } from "preact/hooks";
 
-function NavbarMenu() {
+export default function NavbarMenu() {
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
@@ -8,7 +8,7 @@ function NavbarMenu() {
   };
   return (
     <div class="text-2xl w-full">
-      <div class="fixed top-8 right-6 z-40">
+      <div class="absolute top-8 right-6 z-40">
         <button class="text-orange-600 text-2xl font-bold " onClick={toggleMenu}>
           {showMenu
             ? <i class="ri-close-line"></i>
@@ -62,5 +62,3 @@ function NavbarMenu() {
     </div>
   );
 }
-
-export default NavbarMenu;

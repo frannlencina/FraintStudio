@@ -1,4 +1,4 @@
-import { ProductStructure } from '../utils/Interfaces.ts'
+import { ProductStructure } from '../store/products/ProductsStructure.ts'
 
 interface Props {
     product: ProductStructure,
@@ -8,7 +8,7 @@ interface Props {
 export default function ProductCard({ product, index }: Props) {
   return (
     <a
-      href={`plantillas/product/` + product.slug}
+      href={`/products/` + product.slug}
       class="bg-white rounded-b-3xl text-black max-w-[200px] min-[500px]:max-w-sm hover:text-orange-600 cursor-pointer transition-all"
       key={index}
     >

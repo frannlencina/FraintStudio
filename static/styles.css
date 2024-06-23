@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --primary-color: #5A5A5A;
+    --link-color: #ffba75;
+    --subtitle-color: #ff8710;
+}
 
 #Hero{
     background-image: url('./images/patterns/hero-pattern.png');
@@ -32,4 +37,91 @@
     background-image: url('./images/patterns/contactanos-background-pattern.png');
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+#slug_markdown_container {
+    p, li {
+        color: var(--primary-color);
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: bold;
+        color: var(--subtitle-color);
+    }
+    
+    h1 {
+        font-size: 2.5em;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+    
+    h4 {
+        font-size: 1.2em;
+    }
+    
+    h5 {
+        font-size: 1em;
+    }
+    
+    h6 {
+        font-size: 0.8em;
+    }
+
+    /* Ocultar icono default del renderizado markdown */
+    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+        display: none;
+    }
+    
+    /* Pesos de texto */
+    strong {
+        font-weight: bold;
+    }
+    
+    em {
+        font-style: italic;
+    }
+    
+    /* Estilos de listas */
+    ul {
+        list-style: disc;
+    }
+    
+    ol {
+        list-style: decimal;
+    }
+    
+    ul, ol {
+        margin: 20px 0 20px 30px;
+    }
+    
+    li {
+        margin-bottom: 5px;
+    }
+    
+    p {
+        margin: 10px 0;
+    }
+    
+    /* Estilos de enlaces */
+    a {
+        color: var(--link-color);
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    img {
+        max-height: 400px;
+        border-radius: 20px;
+    }
 }
