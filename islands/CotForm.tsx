@@ -7,9 +7,11 @@ export default function CotForm() {
     "border border-stone-300 p-2 rounded-lg transition outline-stone-100 duration-200 focus:ring-2 focus:ring-stone-200 mt-2 bg-white";
 
   const buttonStyle = {
-    default: 'border border-stone-300 p-2 rounded-lg w-full bg-white hover:105 hover:bg-stone-200 transition focus:ring-2 focus:ring-stone-200',
-    disabled: 'border border-stone-300 p-2 rounded-lg w-full bg-white bg-stone-200 transition cursor-default pointer-events-none'
-  }
+    default:
+      "border border-stone-300 p-2 rounded-lg w-full bg-white hover:105 hover:bg-stone-200 transition focus:ring-2 focus:ring-stone-200",
+    disabled:
+      "border border-stone-300 p-2 rounded-lg w-full bg-white bg-stone-200 transition cursor-default pointer-events-none",
+  };
 
   const [formData, setFormData] = useState({
     name: "",
@@ -27,35 +29,17 @@ export default function CotForm() {
     console.log(formData);
   };
 
-  const handleSubmit = async (e: { preventDefault: () => void }) => {
+  const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     setButtonState(false);
     // Enviar datos a la API
     if (
-      formData.name.length > 1 &&
-      formData.email.length > 1 &&
+      formData.name.length > 1 || formData.email.length > 1 ||
       formData.aboutProject.length > 1
     ) {
-      try {
-        const response = await sendEmailTo();
-        setButtonState(false);
-
-        if (response.ok) {
-          setButtonState(true);
-        } else {
-          console.log("Error al enviar los datos. Por favor, inténtelo de nuevo.");
-          setButtonState(true);
-        }
-      } catch (error) {
-        console.error("Error:", error);
-        setButtonState(true);
-        console.log(
-          "Ocurrió un error al enviar los datos. Por favor, inténtelo de nuevo.",
-        );
-      }
+      sendEmailTo();
     } else {
-      console.log("Todos los campos son obligatorios");
-      setButtonState(true);
+      alert("Todos los campos son obligatorios");
     }
   };
 
@@ -74,7 +58,7 @@ export default function CotForm() {
         web: formData.web,
       }),
     });
-
+    setButtonState(true);
     return fetch(request);
   }
 
@@ -147,9 +131,9 @@ export default function CotForm() {
         />
         <button
           onClick={handleSubmit}
-          className={ buttonState ? buttonStyle.default : buttonStyle.disabled }
+          className={buttonState ? buttonStyle.default : buttonStyle.disabled}
         >
-         {buttonState ? 'Enviar formulario' : 'Cargando...'}
+          {buttonState ? "Enviar formulario" : "Cargando..."}
         </button>
       </form>
     </>
