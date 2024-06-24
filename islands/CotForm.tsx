@@ -41,8 +41,6 @@ export default function CotForm() {
         setButtonState(false);
 
         if (response.ok) {
-          // Redirigir a la página principal
-          window.location.href = "/";
           setButtonState(true);
         } else {
           console.log("Error al enviar los datos. Por favor, inténtelo de nuevo.");
