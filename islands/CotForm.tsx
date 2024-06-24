@@ -1,8 +1,15 @@
 import { useState } from "preact/hooks";
 
 export default function CotForm() {
+  const [buttonState, setButtonState] = useState(true);
+
   const inputStyle =
     "border border-stone-300 p-2 rounded-lg transition outline-stone-100 duration-200 focus:ring-2 focus:ring-stone-200 mt-2 bg-white";
+
+  const buttonStyle = {
+    default: 'border border-stone-300 p-2 rounded-lg w-full bg-white hover:105 hover:bg-stone-200 transition focus:ring-2 focus:ring-stone-200',
+    disabled: 'border border-stone-300 p-2 rounded-lg w-full bg-white bg-stone-200 transition cursor-default pointer-events-none'
+  }
 
   const [formData, setFormData] = useState({
     name: "",
@@ -22,22 +29,41 @@ export default function CotForm() {
 
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    console.log(formData.name.length);
+    setButtonState(false);
     // Enviar datos a la API
     if (
-      formData.name.length > 1 || formData.email.length > 1 ||
+      formData.name.length > 1 &&
+      formData.email.length > 1 &&
       formData.aboutProject.length > 1
     ) {
-      sendEmailTo();
+      try {
+        const response = await sendEmailTo();
+        setButtonState(false);
+
+        if (response.ok) {
+          // Redirigir a la página principal
+          window.location.href = "/";
+          setButtonState(true);
+        } else {
+          console.log("Error al enviar los datos. Por favor, inténtelo de nuevo.");
+          setButtonState(true);
+        }
+      } catch (error) {
+        console.error("Error:", error);
+        setButtonState(true);
+        console.log(
+          "Ocurrió un error al enviar los datos. Por favor, inténtelo de nuevo.",
+        );
+      }
     } else {
-      alert("Todos los campos son obligatorios");
+      console.log("Todos los campos son obligatorios");
+      setButtonState(true);
     }
   };
 
   function sendEmailTo() {
-
     // Create a post request
-    
+
     const request = new Request("https://fraint-studio.deno.dev/api/emails", {
       method: "POST",
       headers: {
@@ -51,11 +77,7 @@ export default function CotForm() {
       }),
     });
 
-    console.log(request.method); // POST
-    console.log(request.headers.get("content-type")); // application/json
-
     return fetch(request);
-  
   }
 
   return (
@@ -125,12 +147,11 @@ export default function CotForm() {
           class={inputStyle}
           placeholder="ej: www.fraintstudio.com"
         />
-
         <button
           onClick={handleSubmit}
-          className="border border-stone-300 p-2 rounded-lg w-full bg-white hover:105 hover:bg-stone-200 transition focus:ring-2 focus:ring-stone-200 "
+          className={ buttonState ? buttonStyle.default : buttonStyle.disabled }
         >
-          Enviar formulario
+         {buttonState ? 'Enviar formulario' : 'Cargando...'}
         </button>
       </form>
     </>
