@@ -38,7 +38,7 @@ export default function CotForm() {
 
     // Create a post request
     
-    const request = new Request("http://localhost:8000/api/emails", {
+    const request = new Request("https://fraint-studio.deno.dev/api/emails", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

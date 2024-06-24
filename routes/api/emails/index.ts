@@ -1,7 +1,5 @@
 import { Handlers } from "$fresh/server.ts";
 
-import { config } from 'https://deno.land/x/dotenv/mod.ts';
-
 type Data = {
   email: string;
   name: string;
