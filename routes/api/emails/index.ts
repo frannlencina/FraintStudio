@@ -12,8 +12,8 @@ type Data = {
 export const handler: Handlers<Data | null> = {
   async POST(req, _ctx) {
 
-    const RESEND_API_KEY = "re_8y3Wxub8_MiePHF35PcwqFc46pZeLSMho"
-    const SEND_EMAIL = "medicencinkii@gmail.com"
+    const RESEND_API_KEY = Deno.env.get("RESEND_API_KEY")
+    const SEND_EMAIL = Deno.env.get("SEND_EMAIL")
 
     const { email, name, aboutProject, web } = (await req.json()) as Data;
 
